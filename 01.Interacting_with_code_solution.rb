@@ -8,6 +8,7 @@ db = SQLite3::Database.new(database_path)
 # returns a list of all the tables of the database
 def list_tables(db)
   # your code here
+  tables = db.execute("SELECT name FROM sqlite_master WHERE type='table'")
 end
 
 puts "List of tables: #{list_tables(db)}"
@@ -20,6 +21,7 @@ puts "List of tables: #{list_tables(db)}"
 
 def number_of_rows(db,table_name)
   # your code here
+  count = db.execute("SELECT count(*) from #{table_name}")
 end
 
 puts "There are #{number_of_rows(db,"Artist")} artists"
