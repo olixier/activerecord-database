@@ -10,14 +10,14 @@ def get_tracks
 end
 
 # Writes a function that returns an array of all the tracks names + the artist
-# the output should an array of arrays.
+# the output should be an array of arrays.
 # [ ["track name","album name"], ["track name","album name"], etc.... ]
 def get_tracks_with_albums
   # your code here
 end
 
 # Writes a function that returns an array of all the tracks names + the album + the artist
-# the output should an array of arrays.
+# the output should be an array of arrays.
 # [ ["track name","album name","artist name"], ["track name","album name","artist name"], etc.... ]
 def get_tracks_with_albums_with_artists
   # your code here
