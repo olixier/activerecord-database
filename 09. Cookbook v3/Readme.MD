@@ -1,27 +1,29 @@
 ## Obectives
 
-You will add database validations for your Cookbook.
+Build a complete Cookbook application that you will run in the terminal with `ruby cookbook.rb`
 
-What is a database validation ?
+This application is a library for recipes. Here is what you will be able to do:
 
-A database validation is a rule that ensures that your data is consistent and valid.
+* Login or Register as user
+* See your recipes or search for other recipes
+* Create new recipes
 
-	```
-	
+Example:
 
-
-## To do:
-
-Writes database validation to:
-
-0. Make sure all fields in recipes and users are required
-1. Make sure that name is unique for recipes. (i.e you cannot have two recipes with the same name in your cookbok)
-2. Make sure email is unique for users
-3. Make sure email is valid (xxxx@xxxx.xxx)
-4. Make sure difficulty of recipes is between 1 and 5
-
-Test your validation by trying to create duplicated recipes or users, or users with invalid email, or recipes with invalid difficulty.
-
-## Resources
-
-[http://edgeguides.rubyonrails.org/active_record_validations.html](http://edgeguides.rubyonrails.org/active_record_validations.html)
+ ````
+ Welcome to Le Wagon Cookbook!
+ 
+ Are you already a member ? y/n
+ If yes => what is your email ?
+ If no => you can register by giving your name and email
+ 
+ What do you want to do ?
+ 	1. Search for your recipes
+ 	2. Search for other recipes
+ 	3 Create a new recipe
+ 	4. Delete a recipe
+ 
+ ````
+ 
+**Warining**: you should be careful to database validations and return correct messages when database validation fail.
+For example, if someone registers with an email that already exists, you have to return the correct error message.
