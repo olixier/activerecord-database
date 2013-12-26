@@ -9,16 +9,16 @@ Design the Cookbook database, and build the functions to Create, Read, Update an
 
 ###Reminder
 
-* The cookbook database contains Recipes and Chefs
-* A Chef has an Unique Id (Integer) and a Name (String)
-* A Recipe has an Unique Id (Integer) and a Name (String) 
-* A Chef can create many recipes.
-* A recipe belongs to a Chef
-
-
+* The cookbook database contains Recipes
+* A Recipe has:
+	* name:string 
+	* description:string 
+	* length:integer (minutes) 
+	* difficulty:integer 
+	
 ###Exercise
 
-1. The goal of this exercise is to build a little program with Active Record that can Create, Read, Update and Delete Chefs and Recipes.
+1. The goal of this exercise is to build a little program with Active Record that can Create, Read, Update and Delete recipes.
 
 To help you started, we already prepared a skeleton app for you! (04. CookBook folder)
  
