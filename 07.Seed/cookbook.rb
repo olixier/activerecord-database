@@ -1,4 +1,5 @@
 require_relative 'config/application'
 require './models/recipe'
 
-# your code here to query the database
+# query the database here
+# gets the top 10 difficult recipes

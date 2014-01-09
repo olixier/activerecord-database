@@ -1,5 +1,3 @@
-# Objectives
-
 The goal of this first exercise is to become familiar with database design.
 
 ## Survey database design

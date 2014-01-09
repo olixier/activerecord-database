@@ -1,14 +1,10 @@
-## Interacting with code
-
-Now it is time to use code to interact with the jukebox database.
+Now it is time to use code to interact with the `jukebox` database.
 
 For that we use a gem called sqlite3 (not surprising!) [http://rubygems.org/gems/sqlite3](http://rubygems.org/gems/sqlite3)
 
 To install the gem on your computer ``gem install sqlite3``
 
-## Obective
-
-* The goal is to query the database with Ruby.
+The goal is to query the database with Ruby.
 
 ## To do
 

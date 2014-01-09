@@ -31,7 +31,7 @@ Example:
 ````
 
 
-We prepare a skeleton of the app for you.
+We prepared a skeleton of the app for you.
 
  
 
