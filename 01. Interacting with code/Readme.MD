@@ -1,35 +1,49 @@
-#Interacting with a DB with code
+## Interacting with code
 
-* In this exercice, we are going to do the same thing as the previous one, but with Ruby (instead of the command line tool)
+Now it is time to use code to interact with the jukebox database.
 
-* For that we use a gem call sqlite3 [http://rubygems.org/gems/sqlite3](http://rubygems.org/gems/sqlite3)
+For that we use a gem called sqlite3 (not surprising!) [http://rubygems.org/gems/sqlite3](http://rubygems.org/gems/sqlite3)
+
+To install the gem on your computer ``gem install sqlite3``
+
+## Obective
+
+* The goal is to query the database with Ruby.
+
+## To do
+
+Write a program in ruby to answer the following questions:
+
+1. How many rows contains each table ?
+
+	For that, you can create a function ``number_of_rows(db,table_name)`` that returns the number of rows in 	the table called "table_name".
 
 	````
-	gem install sqlite3
+	def number_of_rows(db,table_name)
+		# your code here
+	end
+	
+	puts "There are #{number_of_rows(db,"Artist")} artists"
+	=> There are 275 artists
 	````
 
-## Obectives
+2. Returns the list of all the artists and sort them by name 	(alphabetical order)
 
-* The goal is to query the Chinook database with Ruby
+	Tip: use the ``order by`` SQL command.
+	
+3. Find all the love songs (i.e the tracks that contain "love" in their name) and count them.
 
-## Exercice
+	Tip: use the ``where`` and ``like`` SQL commands.
 
-#### Write a code in ruby that answers the following questions:
+4. Returns all the tracks that are longer than 10 minutes and sort them by length.
 
-* How many tables does the Chinook database contain ?
-* How many artists are there in the Artist table ?
-* How many tracks are there in the Track table ?
+	Tip: you can use the comparison operator ``>`` in SQL.
 
-
-## Tip
-
-* Your code should `require 'sqlite3'"`
-* You can reuse the queries you made in the previous exercise.
 
 ## Resources
 
 * [http://zetcode.com/db/sqliteruby/](http://zetcode.com/db/sqliteruby/)
 * [http://viewsourcecode.org/why/hacking/aQuickGuideToSQLite.html](http://viewsourcecode.org/why/hacking/aQuickGuideToSQLite.html)
-
+* [http://www.sqlcommands.net/](http://www.sqlcommands.net/)
 
 

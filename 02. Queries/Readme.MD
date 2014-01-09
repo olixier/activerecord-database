@@ -1,52 +1,39 @@
-#Queries
+## SQL queries (advanced)
 
-* In this exercise your will build more complex SQL queries to read and manipulate data from a SQLite database.
 
-## Objectives
+Now it is time to perform more complex SQL queries and especially ``join`` queries to read data from multiple tables at the same time.
 
-From the Chinook Database, you will have to do the following:
+To be an expert in ``join``queries, it is here: [http://www.w3schools.com/sql/sql_join.asp](http://www.w3schools.com/sql/sql_join.asp)
 
-- Writes a function that returns the list of all the track names
 
-	````
-	def get_tracks
+## To do 
+
+From the Jukebox database:
+
+1. Gets all the tracks with the corresponding artist and album.
+   Your output should be an array of arrays :
+   ``["track name", "artist name", "album name"]``
+
+	Tip: you have to use two ``join`` sql statements.
 	
-	end
+2. For each genre of music, finds the number of tracks and the average song length (in minutes)
+
+	Tip: you have to use a ``group by`` statement with aggregate 	funtions ``count`` and ``avg``. 
+	
+	example: 
+	
 	````
-
-- Writes a function that returns an array of all the tracks names + the artist. The output should be an array of arrays. 
-[ ["track name","album name"], ["track name","album name"], etc.... ]
-
+	Rock
+	1297 songs
+	4.7 minutes avg length
 	````
-	def get_tracks_with_albums
-  		# your code here
-	end
-	````
+	
+3. Find the top 5 artists that made the most rocks songs.
+
+	Tip: you have to use mutliple ``join`` statements, an aggregate function ``count``, a ``group by``, a ``order by`` and a ``limit``statement.
+	
+
+	
 
 
-- Writes a function that returns an array of all the tracks names + the album + the artist. The output should be an array of arrays.
-[ ["track name","album name","artist name"], ["track name","album name","artist name"], etc.... ]
-
-	````
-	def get_tracks_with_albums_with_artists
-  	# your code here
-	end
-	````
-
-
-- Writes a function that find the top 5 artist with the most albums, ordered by number of albums. TIP: you have to use a GROUP BY statement.
-
-	````
-	def top_artists_with_most_albums
-  		# your code here
-	end
-	````
-
-- Writes a function that find the top 5 artist with the most tracks, ordered by number of tracks. TIP: you have to use a GROUP BY statement.
-
-	````
-	def top_artists_with_most_tracks
-  		# your code here
-	end
-	````
 

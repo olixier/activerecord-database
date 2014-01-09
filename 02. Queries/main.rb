@@ -1,34 +1,23 @@
 require 'sqlite3'
 
 # opens the database
-database_path = "db/Chinook_Sqlite.sqlite"
+database_path = "db/jukebox.sqlite"
 db = SQLite3::Database.new(database_path)
 
-# Writes a function that returns the list of all the track names
-def get_tracks
-  # your code here
-end
+# 1. returns the list of tracks with their album and artist
+tracks = # your code here
 
-# Writes a function that returns an array of all the tracks names + the artist
-# the output should be an array of arrays.
-# [ ["track name","album name"], ["track name","album name"], etc.... ]
-def get_tracks_with_albums
-  # your code here
-end
 
-# Writes a function that returns an array of all the tracks names + the album + the artist
-# the output should be an array of arrays.
-# [ ["track name","album name","artist name"], ["track name","album name","artist name"], etc.... ]
-def get_tracks_with_albums_with_artists
-  # your code here
-end
+# 2. For each genre of music, finds the number of tracks and the average song length.
+# your code here.
 
-# Writes a function that find the top 5 artist with the most albums, ordered by number of albums
-def top_artists_with_most_albums
-  # your code here
-end
 
-# Writes a function that find the top 5 artist with the most tracks, ordered by number of tracks
-def top_artists_with_most_tracks
-  # your code here
-end
+# 3. List the top 5 rock artists
+# your code here.
+
+# sql = " SELECT a.name, count(t.trackId) FROM Track t inner join Album b on t.albumId = b.albumId "
+# sql += " inner join Artist a on a.artistId = b.artistId "
+# sql += " inner join Genre g on g.genreId = t.genreId "
+# sql += " where g.name == 'Rock'  group by a.name order by count(t.trackId) DESC limit 5"
+# top_artists = db.execute(sql)
+# puts top_artists

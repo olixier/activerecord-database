@@ -1,4 +1,4 @@
-## Objective
+Since now you are an expert in SQL queries, let's get ourselves a little break and 
 
 You will build a Cookbook database that contains recipes. And you will code a program than can Create, Read, Update and Delete recipes from the database.
 
