@@ -11,10 +11,8 @@ end
 puts "There are #{number_of_rows(db,"Artist")} artists"
 puts "There are #{number_of_rows(db,"Track")} tracks"
 puts "There are #{number_of_rows(db,"Album")} albums"
-puts "There are #{number_of_rows(db,"Playlist")} playlist"
 puts "There are #{number_of_rows(db,"Genre")} genres"
 puts "There are #{number_of_rows(db,"MediaType")} media types"
-puts "There are #{number_of_rows(db,"PlaylistTrack")} playlist tracks"
 
 
 # returns all the artists sorted by alphabetical order.
