@@ -5,7 +5,7 @@ require './models/recipe'
 puts "Seeding database..."
 
 # Here is a sample of ingredients (you are free to add some !)
-ingredients = ["boeuf", "veau", "thon", "tomates", "fraise", "bar", "merlu", "thon", "epinard"]
+ingredients = ["curry", "crevettes", "agneau", "pomme", "orange", "café", "asperges", "celeri", "dorade"]
 
 # Your code goes here 
 # 1. Scrape recipes data from marmiton for these ingredients
