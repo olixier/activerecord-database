@@ -9,7 +9,7 @@ ActiveRecord::Base.establish_connection('development')
 # Create the migration for the Recipe table
 unless ActiveRecord::Base.connection.tables.include? "recipes"
   ActiveRecord::Schema.define do
-    create_table :recipes do |table|
+    create_table :recipes do |t|
       # your code here to create the schema of the Recipes table  
        
     end
