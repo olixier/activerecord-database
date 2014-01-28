@@ -10,8 +10,10 @@ ActiveRecord::Base.establish_connection('development')
 unless ActiveRecord::Base.connection.tables.include? "recipes"
   ActiveRecord::Schema.define do
     create_table :recipes do |t|
-      # your code here to create the schema of the Recipes table  
-       
+    	t.column "name", :string, :limit => 100, :null => false
+    	t.column "description", :string, :limit => 255, :null => false
+    	t.column "length", :integer, :default => 0
+    	t.column "difficulty", :integer, :default => 0
     end
   end
 end
