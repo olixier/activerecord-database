@@ -27,7 +27,8 @@ elsif choice == 2
 	puts "All recipes deleted!"
   
 elsif choice == 3
-	Recipe.all.each { |recipe| puts "#{recipe.id}. #{recipe.name} (#{recipe.description}, #{recipe.length}min, difficulty #{recipe.difficulty}/3)" }
+	puts Recipe.all
+	# Recipe.all.each { |recipe| puts "#{recipe.id}. #{recipe.name} (#{recipe.description}, #{recipe.length}min, difficulty #{recipe.difficulty}/3)" }
   
 else
   puts "i did not understand"
