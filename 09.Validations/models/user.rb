@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
-  # your code here
-  # class implementation + validations
+  has_many :recipes
+	validates :name, presence: true
+	validates :email, presence: true, uniqueness: true, format: { with: /\A[\w.-]+@[\w.-]+.\w+\z/ }
 end
