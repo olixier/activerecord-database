@@ -16,6 +16,8 @@ Difficulty int
 )
 }
 
+# on peut remplacer la condition ci-dessous avec : CREATE TABLE IF NOT EXISTS dans sql
+
 begin
 	db.execute(sql)
 	puts "Welcome to your new Cookbook!"
